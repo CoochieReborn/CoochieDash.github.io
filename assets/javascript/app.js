@@ -4,13 +4,13 @@ class _app {
   id = 0;
   videoElement = null;
   audioElement = null;
-  musicVolume = 0.12;
+  musicVolume = 0.16;
   musicFadeIn = 4000;
   skippedIntro = false;
   backgroundToggler = false;
   shouldIgnoreVideo = false;
   effects = ['bounce', 'flash', 'pulse', 'rubberBand', 'shake', 'swing', 'tada', 'wobble', 'jello'];
-  brandDescription = ['best spoofer', 'very halal', 'very undetected', 'weed addict', 'the one and only', 'EAC &  BE'];
+  brandDescription = ['best spoofer', 'very halal', 'very undetected', 'weed addict', 'the one and only', 'EAC &  BE', 'Pasting since 1909'];
 
   iconChanger = (urls, delay) => {
     if (!urls) return;
