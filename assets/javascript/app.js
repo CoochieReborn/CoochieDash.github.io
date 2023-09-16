@@ -10,7 +10,7 @@ class _app {
   backgroundToggler = false;
   shouldIgnoreVideo = false;
   effects = ['bounce', 'flash', 'pulse', 'rubberBand', 'shake', 'swing', 'tada', 'wobble', 'jello'];
-  brandDescription = ['best spoofer', 'very halal', 'very undetected', 'weed addict', 'the one and only', 'EAC &  BE', 'Pasting since 1909'];
+  brandDescription = ['best spoofer', 'very halal', 'very undetected', 'weed addict', 'the one and only', 'Since 1909'];
 
   iconChanger = (urls, delay) => {
     if (!urls) return;
