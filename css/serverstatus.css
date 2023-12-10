@@ -1,0 +1,147 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../images/background2.jpg');
+    background-attachment: fixed;  
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center center;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 3%;
+    padding-left: 10px;
+    padding-top: 21px;
+    background-color: rgba(31, 36, 49, 0); 
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+}
+
+.top-menu {
+    padding-left: 0.5%;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-item {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    display: flex; 
+    align-items: center;
+}
+
+.menu-item:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+@media only screen and (max-width: 768px) {
+    .custom-py {
+        padding-top: 60px;
+        padding-left: 14px;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .mobile-icon {
+        display: inline-block;
+        font-size: 1.5em;
+        color: #aaa;
+        margin-right: 5px;
+    }
+
+    .menu-item:hover .mobile-icon {
+        color: white;
+    }
+}
+
+
+.server-status {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    max-width: 500px;
+}
+
+.server-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.server-item:hover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.server-name {
+    color: white;
+    font-weight: bold;
+    font-size: 18px; 
+}
+
+.server-status-indicator {
+    padding: 8px 12px;
+    border-radius: 20px; 
+    font-weight: bold;
+    text-align: center;
+    min-width: 120px;
+}
+
+.operational {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.maintenance {
+    background-color: #FFC107;
+    color: #333;
+}
+
+.outage {
+    background-color: red;
+    color: white;
+}
